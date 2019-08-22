@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ValidateClass</title>
+</head>
+<body>
+<script>
+    function checking(str) {
+        let kTra = /^[A,C,P]+[0-9]{4}([G-M]$)/;
+        let kq = kTra.test(str);
+        if (kq){
+            document.write("Ten lop hop le!");
+        } else {
+            document.write("Ten lop khong hop le!");
+        }
+    };
+    let a = prompt("");
+    checking(a);
+</script>
+</body>
+</html>
